@@ -1,0 +1,13 @@
+
+{% for employee in employees %}
+
+    <form action="{{url_for('store')}}" method="post">
+        <input type="text" name="Id" value="{{ employee[0] }}">
+        <p>name: <input type="text" name="name" values="{{ employee[1] }}"></p>
+        <p>last_name: <input type="text" name="last_name" values="{{ employee[2] }}"></p>
+        <p>email: <input type="text" name="email" values="{{ employee[3] }}"></p>
+        <p>position: <input type="text" name="position" values="{{ employee[4] }}"></p>
+        <button type="submit">Guardar</button>
+    </form>
+
+{% endfor %} 
