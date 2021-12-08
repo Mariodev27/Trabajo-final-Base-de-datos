@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h1>Registro de los empleados</h1>
+        <form action="{{url_for('store')}}" method="post">
+            <p>name: <input type="text" name="name"></p>
+            <p>last_name: <input type="text" name="last_name"></p>
+            <p>email: <input type="text" name="email"></p>
+            <p>position: <input type="text" name="position"></p>
+            <p>foto: <input type="file" name="foto"></p>
+            <button type="submit">Guardar</button>
+        </form>
+    </section>
+
+</body>
+</html>
